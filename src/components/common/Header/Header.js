@@ -13,7 +13,7 @@ import {
 import styles from './Header.scss';
 import classNames from 'classnames/bind';
 import AccountMenu from './Menu/account';
-//import homeBg from 'images/home-bg.jpg';
+import homeBg from 'images/home-bg.jpg';
 import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
@@ -55,7 +55,7 @@ class Header extends Component {
           </Container>
         </Navbar>
 
-        <div className={cx("header")} style={{  }}>
+        <div className={cx("header")} style={{ backgroundImage: `url(${homeBg})` }}>
           <div className="overlay"></div>
           <Container>
             <Row>
